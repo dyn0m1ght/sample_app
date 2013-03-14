@@ -1,0 +1,33 @@
+....FF..FF
+
+Failures:
+
+  1) StaticPages About page 
+     Failure/Error: it {should have_selector('h1', text: 'About Us')}
+       expected css "h1" with text "About Us" to return something
+     # ./spec/requests/static_pages_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  2) StaticPages About page 
+     Failure/Error: it { should have_selector('title', text: "#{base_title} | About Us")}
+       expected css "title" with text "Ruby on Rails Tutorial Sample App | About Us" to return something
+     # ./spec/requests/static_pages_spec.rb:29:in `block (3 levels) in <top (required)>'
+
+  3) User pages signup page 
+     Failure/Error: it {should have_selector('h1', text: 'Sign up') }
+       expected css "h1" with text "Sign up" to return something
+     # ./spec/requests/user_pages_spec.rb:11:in `block (3 levels) in <top (required)>'
+
+  4) User pages signup page 
+     Failure/Error: it {should have_selector('title', text: "#{base_title} | Sign up")}
+       expected css "title" with text "Ruby on Rails Tutorial Sample App | Sign up" to return something
+     # ./spec/requests/user_pages_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+Finished in 0.35302 seconds
+10 examples, 4 failures
+
+Failed examples:
+
+rspec ./spec/requests/static_pages_spec.rb:28 # StaticPages About page 
+rspec ./spec/requests/static_pages_spec.rb:29 # StaticPages About page 
+rspec ./spec/requests/user_pages_spec.rb:11 # User pages signup page 
+rspec ./spec/requests/user_pages_spec.rb:12 # User pages signup page 
